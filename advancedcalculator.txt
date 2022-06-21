@@ -6,7 +6,7 @@ public class DoWhileSwitch {
 		Scanner s=new Scanner(System.in);
 		int n1,n2;
 		int ans=1,c=0;
-	
+		int num, p;
 		char choice;
 		
 		do
@@ -14,7 +14,7 @@ public class DoWhileSwitch {
 			System.out.println( "Enter any two numbers:");
 			n1=s.nextInt();
 			n2=s.nextInt();
-			System.out.println("a. Addition\nb. Subtraction\nc. Multiplication\nd. Division\n\n. Exit");
+			System.out.println("a. Addition\nb. Subtraction\nc. Multiplication\nd. Division\np. Power\n. Exit");
 			System.out.println("Enter Your Choice: ");
 			choice=s.next().charAt(0);
 			
@@ -45,7 +45,16 @@ public class DoWhileSwitch {
 				}
 				break;
 				
-		
+		case 'p' :
+		System.out.println("Enter the num and its power : ");
+		Scanner s = new Scanner(System.in);
+		num = s.nextInt();
+		p = s.nextInt();
+		long result = 1;
+		s.close();
+		for(; p !=0; --p){
+			result *= num;
+		}
 		System.out.println("ans = "+result);
 			case 'e':
 				System.exit(0);
