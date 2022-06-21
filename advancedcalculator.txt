@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//this code demo for advanced calculator
 public class DoWhileSwitch {
 	public static void main(String args[])
 	{
