@@ -31,10 +31,10 @@ public class DoWhileSwitch {
 					c=n2-n1;
 				System.out.println("Subtraction of two numbers is: "+c);
 				break;
-			case 'c':
-				c=n1*n2;
-				System.out.println("Multiplication of two numbers is: "+c);
-				break;
+			//case 'c':
+				//c=n1*n2;
+				//System.out.println("Multiplication of two numbers is: "+c);
+				//break;
 			case 'd':
 				if(n2==0)
 					System.out.println("Denominator should not be zero");
